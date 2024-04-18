@@ -30,7 +30,7 @@ export const Card = (props) => {
 Card.propTypes = {
 	image: PropTypes.string,
 	fullName: PropTypes.string,
-	address: PropTypes.string,
 	phone: PropTypes.string,
-	email: PropTypes.string
+	email: PropTypes.string,
+	address: PropTypes.string,
 };

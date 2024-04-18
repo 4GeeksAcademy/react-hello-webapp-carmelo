@@ -1,11 +1,11 @@
-import React from "react";
-
+import React,{useContext} from "react";
+import { Context } from "../store/appContext";
 export const ModalDelete = (props) => {
   const { show, onClose, deleteContact } = props;
-  
+  const {store,actions} = useContext(Context);
 
   const handleYesClick = () =>{
-    deleteContact();
+    actions.deleteContact(store.contactToDelete.id);
     onClose();
   }
 
